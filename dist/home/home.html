@@ -1,0 +1,9 @@
+<div slick>
+	<div class="my-slide" data-ng-repeat="item in info" 
+	  >
+		<img src="{{item.picture}}" alt="">
+		<h2 data-ng-bind="item.title" ui-sref="detail({ category: replaceValue(item.category) , title: replaceValue(item.title) })"></h2>
+		<span data-ng-bind="item.category" class="categoriaHome"></span>
+		<p data-ng-bind="item.about"></p>
+	</div>
+</div>

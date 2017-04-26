@@ -1,0 +1,12 @@
+<div data-ng-repeat="item in info" data-ng-if="replaceValue(item.title) === title">
+	<section class="bannerInternas">
+	   <div class="texto">
+	   		<p data-ng-bind="item.title"></p>
+	   		<a ui-sref="home"> <img src="assets/img/left.png" alt=""> Volver</a>
+	   </div>
+	   <img src="{{item.picture}}" alt="{{item.title}}">
+	</section>
+	<aside>
+	   <p class="pgeneral" data-ng-bind="item.about"></p>
+	</aside>
+</div>
